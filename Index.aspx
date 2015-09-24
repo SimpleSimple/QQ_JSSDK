@@ -26,6 +26,7 @@
 
         alert(QC.Login.check());
         (function () {
+            //初始化页面加载
             if (window.location.hash.length == 0) {
                 QC.Login({
                     btnId: "qqLoginBtn"    //插入按钮的节点id

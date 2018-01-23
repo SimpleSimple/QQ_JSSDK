@@ -1,1 +1,2 @@
 # QQ_JSSDK
+QQ登陆JSSDK示例

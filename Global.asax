@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="QQConnection.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="QQ_JSSDK.Global" Language="C#" %>

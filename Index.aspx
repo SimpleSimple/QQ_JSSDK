@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="QQConnection.Index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="QQ_JSSDK.Index" %>
+<%@ Import Namespace="System.Configuration" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -6,7 +7,7 @@
     <title></title>
     <meta property="qc:admins" content="350172761453112167636" />
     <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js"
-        data-appid="101237453" data-redirecturi="http://www.99ducaijing.com" charset="utf-8"></script>
+        data-appid="101237453" data-redirecturi="<%=ConfigurationManager.AppSettings["DOMAIN"] %>" charset="utf-8"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -21,7 +22,7 @@
 
         function fnSignOut(){
             QC.Login.signOut();
-            window.location.href = "http://www.99ducaijing.com";
+            window.location.href = "<%=ConfigurationManager.AppSettings["DOMAIN"] %>";
         }
 
         alert(QC.Login.check());
@@ -85,7 +86,7 @@
                     //alert(isLogined);
 
                     if (typeof (window.opener) !== 'undefined') {
-                        window.opener.location.href = "http://www.99ducaijing.com";
+                        window.opener.location.href = "<%=ConfigurationManager.AppSettings["DOMAIN"] %>";
                     }
                 }
             }

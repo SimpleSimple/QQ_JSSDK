@@ -7,7 +7,7 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace QQConnection {
+namespace QQ_JSSDK {
     
     
     public partial class Index {
